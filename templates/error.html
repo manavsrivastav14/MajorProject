@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Loans Simplified website</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/1cd51e69a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section class="sub-header" style="background-image: url(static/images/background.jpg);">
+
+        <nav>
+            <a href="{{url_for('index')}}"><img src="static/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="{{url_for('index')}}">HOME</a></li>
+                    <li><a href="{{url_for('about')}}">ABOUT</a></li>
+                    <li><a href="{{url_for('blog')}}">Blog</a></li>
+                    <li><a href="{{url_for('education')}}">EDUCATION LOAN</a></li>
+                    <li><a href="{{url_for('automobile')}}">AUTOMOBILE LOAN</a></li>
+                    <li><a href="{{url_for('home_loan')}}">HOME LOAN</a></li>
+                    <li><a href="{{url_for('contact')}}">CONTACT</a></li>
+           
+
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i> 
+        </nav>
+        
+        <h1>Banks Prediction</h1>
+        <br>
+    </section>
+    <!--------------Displaying Error Message----->
+
+<br><br>
+    <h1 style="color: brown; margin: 0 22%">Sorry, you are not eligible for applying for the loan</h1>
+            <h3 style="color: brown;">Try again later</h3>
+    <div class="main" style="width:586px; margin:0 auto;">
+        <div class="container">
+            
+            
+            <br><br>
+            <div style="margin-left: 30%; margin-right: auto;">
+                <button type="submit" style="padding: 5px;"><a href="{{url_for('input')}}"><h3 style="text-align: center;">Search Banks for loans</h3></a></button>
+                <br><br>
+              </div>
+            </div>
+        </div> 
+
+
+        <!-------------footer---->
+
+
+        <section class="footer" >
+            <h4>About us</h4>
+            <p>Aids financial organization to custom-tailor their ecosystem from amortization to delinquency tracking in one impeccable loan servicing procedure.</p>
+
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-telegram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i> 
+                
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+        <!--------------------javascript for Toggle Menu----------  -->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+
+            function validate() {    
+                var age = document.getElementById("age");    
+                var gender = document.getElementById("gender");    
+                var income = document.getElementById("income");   
+                var debt = document.getElementById("debt");    
+                var credit_history = document.getElementById("credit_history");    
+                var loan_type = document.getElementById("loan_type");    
+                var sort_type = document.getElementById("sort_type");
+                
+                if(debt>=0.6*income){
+                    alert("Sorry you are not eligible for any loan as emi > 60% of income");    
+                    fname.focus();    
+                    return false; 
+                }  
+            }
+
+
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+      <title>Loans Simplified website</title>
+		<link rel="stylesheet" href="static/css/styles.css">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/1cd51e69a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+     <section class="sub-header" style="background-image: url(static/images/background.jpg);">
+	 
+	 <nav>
+	      <a href="{{url_for('index')}}"><img src="static/images/logo.png"></a>
+		  <div class="nav-links" id="navLinks">
+		     <i class="fa fa-times" onclick="hideMenu()"></i>
+		       <ul>
+				<li><a href="{{url_for('index')}}">HOME</a></li>
+				<li><a href="{{url_for('about')}}">ABOUT</a></li>
+				<li><a href="{{url_for('blog')}}">Blog</a></li>
+				<li><a href="{{url_for('education')}}">EDUCATION LOAN</a></li>
+				<li><a href="{{url_for('automobile')}}">AUTOMOBILE LOAN</a></li>
+				<li><a href="{{url_for('home_loan')}}">HOME LOAN</a></li>
+				<li><a href="{{url_for('contact')}}">CONTACT</a></li>
+			   
+			   
+			   </ul>
+		  
+		  </div>
+	    <i class="fa fa-bars" onclick="showMenu()"></i> 
+	 </nav>
+	 <h1>Education Loan</h1>
+	 
+	 </section>
+
+
+
+<!---- Education loan--------->
+
+ 
+  <section class="course">
+       <h1>Types of Education loan We offer</h1>
+	   <p>There are various sub types in loans .</p>
+	   
+	   <div class="row">
+	    <div class="course-col">
+	    <h3>Secured</h3>
+	    <p>A secured loan is a loan backed by collateral—financial assets you own, like a home or a car—that can be used as payment to the lender if you don't pay back the loan. The idea behind a secured loan is a basic one. Lenders accept collateral against a secured loan to incentivize borrowers to repay the loan on time. </p>
+	    </div>
+		 
+		 <div class="course-col">
+	    <h3>Unsecured</h3>
+	    <p>An unsecured loan is a loan that doesn't require any type of collateral. Instead of relying on a borrower's assets as security, lenders approve unsecured loans based on a borrower's creditworthiness. Examples of unsecured loans include personal loans, student loans, and credit cards. </p>
+	    </div>
+		
+		<div class="course-col">
+	    <h3>what is collateral?</h3>
+	    <p>Collateral is simply an asset, such as a car or home, that a borrower offers up as a way to qualify for a particular loan. Collateral can make a lender more comfortable extending the loan since it protects their financial stake if the borrower ultimately fails to repay the loan in full. </p>
+	    </div>
+		 
+		 
+		 
+		 
+		 
+	   </div>
+	   
+	   </section>
+	   
+	   
+<!-------Facilitues--------------------------------------->
+
+<section class="facilities">
+     </h1>Types of collaterals </h1>
+	 <p>One has to give some kind of financial gurantee of with respect to the borrowed loan amount</p>
+	 
+	 <div class="row">
+	 
+	 <div class="facilities-col">
+	    <img src="static/images/home.jpeg">
+		<h3>Property as collateral</h3>
+		<p>You can use your self-occupied residential or commercial property to borrow a loan. The property is used as collateral and the loan is disbursed by the lender as per the property value and your income to pay back the borrowed amount.</p>
+	 </div>
+	 
+	 <div class="facilities-col">
+	    <img src="static/images/farm.jpeg">
+		<h3>Land as collateral</h3>
+		<p>Land, because of its fixed and immobile nature and the ease at which it can be transferred to the lender in cases of default, is considered ideal collateral. Thus, in theory, better land rights and improved land titling should catalyze greater access to credit among land-owners.</p>
+	 </div>
+	 
+	 <div class="facilities-col">
+	    <img src="static/images/secu.jpeg">
+		<h3>Security as collateral</h3>
+		<p>Securities are fungible and tradable financial instruments used to raise capital in public and private markets. There are primarily three types of securities: equity—which provides ownership rights to holders; debt—essentially loans repaid with periodic payments; and hybrids—which combine aspects of debt and equity.</p>
+	 </div>
+	 
+	 
+	 </div> 
+	 
+</section>
+
+<!-------------footer---->
+
+
+<section class="footer" >
+    <h4>About us</h4>
+	<p>Aids financial organization to custom-tailor their ecosystem from amortization to delinquency tracking in one impeccable loan servicing procedure.</p>
+	
+	<div class="icons">
+	<i class="fa fa-facebook"></i>
+	<i class="fa fa-telegram"></i>
+	<i class="fa fa-twitter"></i>
+	<i class="fa fa-instagram"></i>
+
+	
+	</div>
+	
+</section>
+
+
+
+
+
+
+
+
+<!--------------------javascript for Toggle Menu----------  -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+	
+	function showMenu(){
+	   navLinks.style.right = "0";
+	}
+	function hideMenu(){
+	   navLinks.style.right = "-200px";
+	}
+	
+	
+	
+	
+	
+</script>
+</body>
+</html>

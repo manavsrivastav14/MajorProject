@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+      <title>Loans Simplefied website</title>
+		<link rel="stylesheet" href="static/css/styles.css">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/1cd51e69a3.js" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings = 
+            {"appId":"224d697daa1b7450748c59a2a98e1e354","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+
+</script>
+</head>
+<body>
+	     <section class="header" style="background-image: url(static/images/banner.png);">
+	 
+	 <nav>
+	      <a href="{{url_for('index')}}"><img src="static/images/logo.png"></a>
+		  <div class="nav-links" id="navLinks">
+		     <i class="fa fa-times" onclick="hideMenu()"></i>
+		       <ul>
+			        <li><a href="{{url_for('index')}}">HOME</a></li>
+					<li><a href="{{url_for('about')}}">ABOUT</a></li>
+					<li><a href="{{url_for('blog')}}">Blog</a></li>
+					<li><a href="{{url_for('education')}}">EDUCATION LOAN</a></li>
+					<li><a href="{{url_for('automobile')}}">AUTOMOBILE LOAN</a></li>
+					<li><a href="{{url_for('home_loan')}}">HOME LOAN</a></li>
+					<li><a href="{{url_for('contact')}}">CONTACT</a></li>
+			   </ul>
+		  
+		  </div>
+	    <i class="fa fa-bars" onclick="showMenu()"></i> 
+	 </nav>
+	 
+	<div class="text-box" style="color: black;">
+	    <h1>Best Loan Information Platform</h1>
+		<p style="color: black; font-size: medium;">Delivering a Seamless Digital Lending Experience with LoanSimplified
+		intuitive, lending solution with intelligent automation for lending organizations solely designed with full-service implementation of a loan lifecycle.<br> With seamlessly integrated functionalities and modules, LoansSimplified streamlines the lending process and harnesses the emerging technologies and aids lending business to overcome any shortcomings with high performance, agility and unrivalled customer service.</p>
+		<a href="{{url_for('input')}}" class="hero-btn">Visit Here to get the Bank Information</a>
+		
+	</div>
+	 
+	 </section>
+
+	 <!-- <iframe
+	 style="border: none; overflow: hidden; display: block; align-items: ri;" scrolling="no" 
+	 height="600px"
+	 width="400px"
+	 src="https://widget.kommunicate.io/chat?appId=224d697daa1b7450748c59a2a98e1e354"
+	 allow="microphone; geolocation;"
+ >
+</iframe> -->
+
+<!---- Education loan--------->
+
+  <section class="course">
+       <h1>Loans We offer</h1>
+	   <p>We help you to make data driven decision for your financial decisions by doing it for you.</p>
+	   
+	   <div class="row">
+	    <div class="course-col">
+	    <h3>Home Loan</h3>
+	    <p>A home loan is a secured loan that is obtained to purchase a property by offering it as collateral. Home loans offer high-value funding at economical interest rates and for long tenors. They are repaid through EMIs. After repayment, the property's title is transferred back to the borrower.</p>
+	    </div>
+		 
+		 <div class="course-col">
+	    <h3>Education loan</h3>
+	    <p>An education loan is a sum of money borrowed to finance post-secondary education or higher education-related expenses. Education loans are intended to cover the cost of tuition, books and supplies, and living expenses while the borrower is in the process of pursuing a degree.</p>
+	    </div>
+		
+		<div class="course-col">
+	    <h3>Automobile loan</h3>
+	    <p>Auto loans are secured loans where the vehicle itself is used as a collateral. It is offered by lenders for new cars, used cars, two wheelers (generally called a Two-wheeler Loan) and commercial vehicles</p>
+	    </div>
+		 
+		 
+		 
+		 
+		 
+	   </div>
+	   
+	   </section>
+
+<!--------campus----------------------->
+
+
+<section class="campus">
+
+<h1>Most trending loans products.</h1>
+<p>Tired of standing in line and annoyed by bank representavies repetative questions at every branch. NO WORRIES we got you covered by OUR AI & ML based PLATFORM WILL DO IT FOR YOU. </p>
+
+
+<div class="row">
+   <div class="campus-col">
+      <img src="static/images/london.jpeg">
+	  <div class="layer">
+	      <h3>Automobile Loan</h3>
+	  </div>
+	</div>
+	
+	<div class="campus-col">
+      <img src="static/images/newyork.png">
+	  <div class="layer">
+	      <h3>Education loan</h3>
+	  </div>
+	</div>
+	
+	<div class="campus-col">
+      <img src="static/images/washington.png">
+	  <div class="layer">
+	      <h3>Home loan</h3>
+	  </div>
+	</div>
+
+</div>
+
+</section>
+
+
+<!-------Facilitues--------------------------------------->
+
+<section class="facilities">
+     </h1>Our Facilities</h1>
+	 <p>Our Outomated system saves time from reading all boring data insteed just see the output</p>
+	 
+	 <div class="row">
+	 
+	 <div class="facilities-col">
+	    <img src="static/images/library.png">
+		<h3>We will find terminologies for you</h3>
+		<p>Don't know anything about loan why study google or study . We have got you covered we take into consideration best factors for your and reccommend it to you.</p>
+	 </div>
+	 
+	 <div class="facilities-col">
+	    <img src="static/images/basketball.jpeg">
+		<h3>Thinking about boring statistics- Let Our AI& ML do it for you</h3>
+		<p>Have a chill pill buddy our AI and ML algorithm is working for you just relax and think what are you going to do it your money!!!</p>
+	 </div>
+	 
+	 <div class="facilities-col">
+	    <img src="static/images/cafeteria.png">
+		<h3>No need to meet the broker</h3>
+		<p>Don't spend Your precious time meeting with the broker for negotiation. We will find best of the recommendations so you don't need  to worry about any negotiation. </p>
+	 </div>
+	 
+	 
+	 </div> 
+	 
+</section>
+
+
+
+
+
+<!-----------testimonies----------------------------------------->
+
+<section class="testimonials">
+     <h1> What Our User says</h1>
+	 <p>hdcybwb yuudewodyu ywebdobwd ywgebgobew wbowub.</p>
+
+
+     <div class="row"> 
+	 
+	   <div class="testimonial-col">
+	   <img src="static/images/user1.jpg">
+	   <div>
+	        <p>The platform is superb and the developers are great.</p>
+	   
+	   <h3>Christiene Berkley</h3>
+	   <i class="fa fa-star"></i>
+	   <i class="fa fa-star"></i>
+	   <i class="fa fa-star"></i>
+	   <i class="fa fa-star"></i>
+	   <i class="fa fa-star-o"></i>
+	   </div>
+	   
+	   </div>
+	 
+	 
+	 <div class="testimonial-col">
+	   <img src="static/images/user2.jpg">
+	   <div>
+	        <p>Alwyas .</p>
+	   
+	   <h3>Mia Rodes</h3>
+	   <i class="fa fa-star"></i>
+	   <i class="fa fa-star"></i>
+	   <i class="fa fa-star"></i>
+	   <i class="fa fa-star"></i>
+	   <i class="fa fa-star-o"></i>
+	   </div>
+	   
+	   </div>
+	 
+	 
+	 </div>
+
+
+
+</section>
+
+
+
+
+<!-------------Call to Action---->
+
+
+<section class="cta" style='background-image:url(static/images/banner2.jpg);'>
+
+     <h1>ENROLL FOR OUR VARIOUS LOAN PLANS WITH OUR ASSOCIATED BANKS</h1>
+	 <a href="{{url_for('contact')}}" class="hero-btn">CONTACT US </a>
+
+</section>
+
+
+
+
+
+<!-------------footer---->
+
+
+<section class="footer" >
+    <h4>About us</h4>
+	<p>Aids financial organization to custom-tailor their ecosystem from amortization to delinquency tracking in one impeccable loan servicing procedure.</p>
+	
+	<div class="icons">
+	<i class="fa fa-facebook"></i>
+	<i class="fa fa-telegram"></i>
+	<i class="fa fa-twitter"></i>
+	<i class="fa fa-instagram"></i>
+
+	
+	</div>
+	
+</section>
+
+
+
+
+
+
+
+
+<!--------------------javascript for Toggle Menu----------  -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+	
+	function showMenu(){
+	   navLinks.style.right = "0";
+	}
+	function hideMenu(){
+	   navLinks.style.right = "-200px";
+	}
+	
+	
+	
+	
+	
+</script>
+</body>
+</html>
+
+<!-- <iframe style="overflow: hidden; display: block;" scrolling="no"  data-url="https://docs.kommunicate.io/docs/web-installation.html#install-chat-widget-in-iframe">
+<a href="https://www.kommunicate.io/"> Kommunicate Live chat </a></iframe> -->
+
+<!-- <iframe
+            style="border: none; overflow: hidden; display: block;" scrolling="no" 
+            height="400px"
+            width="200px"
+            src="https://widget.kommunicate.io/chat?appId=224d697daa1b7450748c59a2a98e1e354"
+            allow="microphone; geolocation;"
+        >
+</iframe> -->

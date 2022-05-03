@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+      <title>Loans Simplefied website</title>
+		<link rel="stylesheet" href="static/css/styles.css">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/1cd51e69a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+     <section class="sub-header" style="background-image: url(static/images/background.jpg);">
+	 
+	 <nav>
+	      <a href="{{url_for('index')}}"><img src="static/images/logo.png"></a>
+		  <div class="nav-links" id="navLinks">
+		     <i class="fa fa-times" onclick="hideMenu()"></i>
+		       <ul>
+				<li><a href="{{url_for('index')}}">HOME</a></li>
+				<li><a href="{{url_for('about')}}">ABOUT</a></li>
+				<li><a href="{{url_for('blog')}}">Blog</a></li>
+				<li><a href="{{url_for('education')}}">EDUCATION LOAN</a></li>
+				<li><a href="{{url_for('automobile')}}">AUTOMOBILE LOAN</a></li>
+				<li><a href="{{url_for('home_loan')}}">HOME LOAN</a></li>
+				<li><a href="{{url_for('contact')}}">CONTACT</a></li>
+			   </ul>
+		  
+		  </div>
+	    <i class="fa fa-bars" onclick="showMenu()"></i> 
+	 </nav>
+	 <h1>Basic terminologies of loans</h1>
+	 
+	 </section>
+
+<!-------------Blog page---------------------------->
+
+<section class="blog-content">
+
+
+    <div class="row">
+	    <div class="blog-left"> 
+		<img src="static/images/certificate.jpg">
+		<h2>Lets get you started on the journey of your dream 2022</h2>
+		<p>Loan Origination:Built with the state-of-the-art workflow 
+		system on microservices architecture that is fully automated, parameterized, and powered by a business rule engine.</p>
+		<br>
+		<p>Loan Servicing :
+Aids financial organization to custom-tailor their 
+ecosystem from amortization to delinquency tracking 
+in one impeccable loan servicing procedure.</p>
+<br>
+<p>Collection Management: 
+A comprehensive automated debt and receivables system with improved
+ decision-making system, effective collection strategies and more.</p>
+ <br>
+ <p>Collateral Management :
+The centralized management monitors real-time exposure of assets
+ and collateralization of credit from a single source 
+ aiding NBFCs to make informed decisions on the collaterals.</p>
+ 
+ 
+ 
+ <div class="comment-box">
+ <h3>Leave a comment</h3>
+ 
+ <form class="comment-form">
+ <input type="text" placeholder="Enter Name">
+ <input type="Email" placeholder="Enter Email">
+ <textarea rows="5" placeholder="Your comment">
+ </textarea>
+ <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+ </form>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+		</div>
+	    <div class="blog-right"> 
+		<h3>Best Current Average Market's Rate of Interest </h3>
+		<div>
+		<span>period of 5 yrs</span>
+		<span>8.75<span>
+		</div>
+		
+		<div>
+		<span>period of 7 yrs</span>
+		<span>10.75%</span>
+		</div>
+		
+		<div>
+		<span>period of 10 yrs</span>
+		<span>11.75%</span>
+		</div>
+		
+		<div>
+		<span>period of 15 yrs</span>
+		<span>12%</span>
+		</div>
+		
+		<div>
+		<span>period of 20 yrs</span>
+		<span>13.25%</span>
+		</div>
+		
+		
+		<div>
+		<span>period of 25 yrs</span>
+		<span>15%</span>
+		</div>
+		
+		<div>
+		<span>period of 30 yrs</span>
+		<span>18.3%</span>
+		</div>
+		
+		
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+</section>
+
+<!-------------footer---->
+
+
+<section class="footer" >
+    <h4>About us</h4>
+	<p>Aids financial organization to custom-tailor their ecosystem from amortization to delinquency tracking in one impeccable loan servicing procedure.</p>
+	
+	<div class="icons">
+	<i class="fa fa-facebook"></i>
+	<i class="fa fa-telegram"></i>
+	<i class="fa fa-twitter"></i>
+	<i class="fa fa-instagram"></i>
+
+	
+	</div>
+	
+</section>
+
+
+
+
+
+
+
+
+<!--------------------javascript for Toggle Menu----------  -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+	
+	function showMenu(){
+	   navLinks.style.right = "0";
+	}
+	function hideMenu(){
+	   navLinks.style.right = "-200px";
+	}
+	
+	
+	
+	
+	
+</script>
+</body>
+</html>

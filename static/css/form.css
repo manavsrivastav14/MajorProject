@@ -1,0 +1,91 @@
+h2 {
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #222;
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-transform: uppercase; }
+
+
+.container {
+  width: 586px;
+  background: #fff;
+  margin-: auto;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px; }
+
+.appointment-form {
+  padding: 50px 60px 70px 60px; }
+
+
+input, select {
+  width: 100%;
+  display: block;
+  border: none;
+  border-bottom: 2px solid #ebebeb;
+  padding: 5px 0;
+  color: #222;
+  margin-bottom: 31px;
+ }
+  input:focus, select:focus {
+    color: #222;
+    border-bottom: 2px solid #4966b1; }
+
+
+.label-agree-term {
+  color: #999; }
+
+.term-service {
+  color: #222; }
+
+.submit {
+  width: auto;
+  background: #4966b1;
+  color: #fff;
+  padding: 16px 17px;
+  font-size: 13px;
+  border: none;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  cursor: pointer;
+ }
+  .submit:hover {
+    background: #3a518d; }
+
+
+
+#confirm_type {
+  margin-bottom: 30px; }
+
+.form-group-2 {
+  margin-top: 15px;
+  margin-bottom: 30px; }
+
+.form-check {
+  margin-bottom: 20px; }
+
+.select-list {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 55px; }
+
+.list-item {
+  position: absolute;
+  width: 100%; }
+
+#confirm_type {
+  z-index: 99; }
+
+#hour_appointment {
+  z-index: 9; }
+
+

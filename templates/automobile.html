@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+      <title>Loans Simplefied website</title>
+		<link rel="stylesheet" href="static/css/styles.css">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/1cd51e69a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+     <section class="sub-header" style="background-image: url(static/images/background.jpg);">
+	 
+	 <nav>
+	      <a href="{{url_for('index')}}"><img src="static/images/logo.png"></a>
+		  <div class="nav-links" id="navLinks">
+		     <i class="fa fa-times" onclick="hideMenu()"></i>
+		       <ul>
+				<li><a href="{{url_for('index')}}">HOME</a></li>
+				<li><a href="{{url_for('about')}}">ABOUT</a></li>
+				<li><a href="{{url_for('blog')}}">Blog</a></li>
+				<li><a href="{{url_for('education')}}">EDUCATION LOAN</a></li>
+				<li><a href="{{url_for('automobile')}}">AUTOMOBILE LOAN</a></li>
+				<li><a href="{{url_for('home_loan')}}">HOME LOAN</a></li>
+				<li><a href="{{url_for('contact')}}">CONTACT</a></li>
+			   
+			   </ul>
+		  
+		  </div>
+	    <i class="fa fa-bars" onclick="showMenu()"></i> 
+	 </nav>
+	 <h1>Automobile Loan</h1>
+	 
+	 </section>
+
+
+
+<!---- Education loan--------->
+
+ 
+  <section class="course">
+       <h1>Common Automobile Loan related Questions</h1>
+	   <p>General loan related questions and answers .</p>
+	   
+	   <div class="row">
+	    <div class="course-col">
+	    <h3>What are the car loan requirements?</h3>
+	    <p>You’ve decided to buy a new car. You’ve test driven several models, chosen a favourite, and are ready to book the dream vehicle. 
+
+But before rushing to apply for a car loan, you must ensure that you meet the eligibility criteria and have the right documents in place.  
+
+This will speed up the processing of the car loan application, and you will have the car in your possession sooner.  </p>
+	    </div>
+		 
+		 <div class="course-col">
+	    <h3>Am I eligible for a car loan</h3>
+	    <p>Each bank has its own criteria for car loans. They may require a minimum annual income, years of employment or company turnover before they can approve your loan.  
+
+For instance, if you are a salaried person, you may need to be employed for at least two years to be eligible for a car loan. 
+
+Similarly, self-employed persons in proprietorship partnership firms or public or private limited companies should have a turnover of at  least Rs. 300,000 per annum to apply for a car loan. 
+
+You can always check your car loan eligibility for a new car loan </p>
+	    </div>
+		
+		<div class="course-col">
+	    <h3>Do I need a guarantor for a car loan? </h3>
+	    <p>Generally, you don’t need a guarantor for a car loan. However, you may need a guarantor if you don’t fulfil the eligibility criteria. 
+
+For example, if your annual income is lower than the bank’s criteria, the may ask you to furnish a guarantor.  </p>
+	    </div>
+		 
+		 
+		 
+		 
+		 
+	   </div>
+	   
+	   </section>
+	   
+	   
+<!-------Facilitues--------------------------------------->
+
+<section class="facilities">
+     </h1>Types of vehicles for automobile loans</h1>
+	 <p>One has to give some kind of financial gurantee of with respect to the borrowed loan amount</p>
+	 
+	 <div class="row">
+	 
+	 <div class="facilities-col">
+	    <img src="static/images/truck.jpeg">
+		<h3>Commercial vehicles</h3>
+		<p> One can avail a automobile loan for a bussiness vehicle .</p>
+	 </div>
+	 
+	 <div class="facilities-col">
+	    <img src="static/images/tractor.jpeg">
+		<h3>Tractor Loans.</h3>
+		<p>Framers can get a loan approval for agriculturakl use at lowest rates possible bt government</p>
+	 </div>
+	 
+	 <div class="facilities-col">
+	    <img src="static/images/risk.jpeg">
+		<h3>Three-wheeler Loans.</h3>
+		<p>Poor or under salaried people who are below poverty line can avail loan on rickshaws or any three wheeler vehicles</p>
+	 </div>
+	 
+	 
+	 </div> 
+	 
+</section>
+
+<!-------------footer---->
+
+
+<section class="footer" >
+    <h4>About us</h4>
+	<p>Aids financial organization to custom-tailor their ecosystem from amortization to delinquency tracking in one impeccable loan servicing procedure.</p>
+	
+	<div class="icons">
+	<i class="fa fa-facebook"></i>
+	<i class="fa fa-telegram"></i>
+	<i class="fa fa-twitter"></i>
+	<i class="fa fa-instagram"></i>
+
+	
+	</div>
+	
+</section>
+
+
+
+
+
+
+
+
+<!--------------------javascript for Toggle Menu----------  -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+	
+	function showMenu(){
+	   navLinks.style.right = "0";
+	}
+	function hideMenu(){
+	   navLinks.style.right = "-200px";
+	}
+	
+	
+	
+	
+	
+</script>
+</body>
+</html>

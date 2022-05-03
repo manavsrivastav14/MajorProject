@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+      <title>Loans Simplefied website</title>
+		<link rel="stylesheet" href="static/css/styles.css">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/1cd51e69a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+     <section class="sub-header" style="background-image: url(static/images/background.jpg);">
+	 
+	 <nav>
+	      <a href="{{url_for('index')}}"><img src="static/images/logo.png"></a>
+		  <div class="nav-links" id="navLinks">
+		     <i class="fa fa-times" onclick="hideMenu()"></i>
+		       <ul>
+				<li><a href="{{url_for('index')}}">HOME</a></li>
+				<li><a href="{{url_for('about')}}">ABOUT</a></li>
+				<li><a href="{{url_for('blog')}}">Blog</a></li>
+				<li><a href="{{url_for('education')}}">EDUCATION LOAN</a></li>
+				<li><a href="{{url_for('automobile')}}">AUTOMOBILE LOAN</a></li>
+				<li><a href="{{url_for('home_loan')}}">HOME LOAN</a></li>
+				<li><a href="{{url_for('contact')}}">CONTACT</a></li>
+			   </ul>
+		  
+		  </div>
+	    <i class="fa fa-bars" onclick="showMenu()"></i> 
+	 </nav>
+	 <h1>Home Loan</h1>
+	 
+	 </section>
+
+
+
+<!---- Education loan--------->
+
+ 
+  <section class="course">
+       <h1>Factors for home loan</h1>
+	   <p>There are various sub types in loans .</p>
+	   
+	   <div class="row">
+	    <div class="course-col">
+	    <h3>MCLR Rates:</h3>
+	    <p>MCLR is the Marginal Cost of Funds based Lending Rate. This interest rate is the minimum that a bank can lend at. It depends on other factors too such as the operating cost, marginal cost of funds, the Cash Reserve Ratio (CRR) and any negative carry on it, and tenor premium. There is an annual reset date for the MCLR during which banks review the rate for existing home loan borrowers. The MCLR on the reset date remains applicable until the next year’s reset date, even if there are changes in the MCLR in between. This means that your interest rate can increase or decrease based on the changes in the MCLR rate. </p>
+	    </div>
+		 
+		 <div class="course-col">
+	    <h3>Loan-to-Value (LTV) Ratio</h3>
+	    <p>LTV refers to the percentage of the property value that can be financed through the loan. A larger quantum of loan attracts a higher rate of interest because it is a higher credit risk. Putting down a larger down-payment can help bring down the quantum of loan which in turn will reduce the interest rates as well. </p>
+	    </div>
+		
+		<div class="course-col">
+	    <h3>Location of the Property</h3>
+	    <p>The location of the property that you are considering will play a role in the interest rates that you are charged. Homes which are in a locality with good amenities and connectivity will have higher resale value. Homes which are in a less desired neighborhood may be cheaper but would have lower resale value. Likewise, newer properties are considered more valuable while older properties are considered to have lower resale value. Lenders view homes which have a good resale value as a lucrative property and so charge lower rates of interest for it. For homes with a lower resale value, interest rates will be higher. </p>
+	    </div>
+		 
+		 
+		 
+		 
+		 
+	   </div>
+	   
+	   </section>
+	   
+	   
+<!-------Facilitues--------------------------------------->
+
+<section class="facilities">
+     </h1>Types of collaterals </h1>
+	 <p>One has to give some kind of financial gurantee of with respect to the borrowed loan amount</p>
+	 
+	 <div class="row">
+	 
+	 <div class="facilities-col">
+	    <img src="static/images/invent.png">
+		<h3>Inventory financing</h3>
+		<p>Cash is another common type of collateral because it works very simply. An individual can take a loan from the bank where he maintains active accounts, and in the event of a default, the bank can liquidate his accounts in order to recoup the borrowed money.</p>
+	 </div>
+	 
+	 <div class="facilities-col">
+	    <img src="static/images/farm.jpeg">
+		<h3>Land as collateral</h3>
+		<p>Land, because of its fixed and immobile nature and the ease at which it can be transferred to the lender in cases of default, is considered ideal collateral. Thus, in theory, better land rights and improved land titling should catalyze greater access to credit among land-owners.</p>
+	 </div>
+	 
+	 <div class="facilities-col">
+	    <img src="static/images/secu.jpeg">
+		<h3>Security as collateral</h3>
+		<p>Securities are fungible and tradable financial instruments used to raise capital in public and private markets. There are primarily three types of securities: equity—which provides ownership rights to holders; debt—essentially loans repaid with periodic payments; and hybrids—which combine aspects of debt and equity.</p>
+	 </div>
+	 
+	 
+	 </div> 
+	 
+</section>
+
+<!-------------footer---->
+
+
+<section class="footer" >
+    <h4>About us</h4>
+	<p>Aids financial organization to custom-tailor their ecosystem from amortization to delinquency tracking in one impeccable loan servicing procedure.</p>
+	
+	<div class="icons">
+	<i class="fa fa-facebook"></i>
+	<i class="fa fa-telegram"></i>
+	<i class="fa fa-twitter"></i>
+	<i class="fa fa-instagram"></i>
+
+	
+	</div>
+	
+</section>
+
+
+
+
+
+
+
+
+<!--------------------javascript for Toggle Menu----------  -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+	
+	function showMenu(){
+	   navLinks.style.right = "0";
+	}
+	function hideMenu(){
+	   navLinks.style.right = "-200px";
+	}
+	
+	
+	
+	
+	
+</script>
+</body>
+</html>

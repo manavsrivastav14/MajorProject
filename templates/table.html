@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://kit.fontawesome.com/1cd51e69a3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="sub-header"style="background-image: url(static/images/background.jpg);">
+
+    <nav>
+      <a href="{{url_for('index')}}"><img src="static/images/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
+        <ul>
+          <li><a href="{{url_for('index')}}">HOME</a></li>
+          <li><a href="{{url_for('about')}}">ABOUT</a></li>
+          <li><a href="{{url_for('blog')}}">Blog</a></li>
+          <li><a href="{{url_for('education')}}">EDUCATION LOAN</a></li>
+          <li><a href="{{url_for('automobile')}}">AUTOMOBILE LOAN</a></li>
+          <li><a href="{{url_for('home_loan')}}">HOME LOAN</a></li>
+          <li><a href="{{url_for('contact')}}">CONTACT</a></li>
+       
+
+        </ul>
+
+      </div>
+     </section> 
+
+  <!-- <div class="section no-pad-bot" id="index-banner"> -->
+    <div >
+      <br><br>
+      <h1 style="text-align: center;">Recommended Banks</h1>
+      <br>
+      <div>
+        <h5 style="text-align: center;" > Banks Suitable for you</h5>
+      </div>
+		
+
+
+      <div class="row-center" style="margin: 5%;">
+    
+        <table >
+          <tr>
+            {% for header in heading %}
+            <th>{{ header }}</th>
+            {% endfor %}
+          </tr>
+          {% for row in data %}
+          <tr>
+            {% for cell in row %}
+              <td> {{cell}} </td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+    
+        </table>
+      </div>
+ 
+
+        
+      <div style="margin:0 45%;">
+        <button type="submit" style="padding: 5px;"><a href="{{url_for('input')}}"><h5 style="text-align: center;">Search Banks</h5></a></button>
+        <br><br>
+      </div>
+    </div>
+ 
+ 
+  <section class="footer" >
+    <h4>About us</h4>
+	<p>Aids financial organization to custom-tailor their ecosystem from amortization to delinquency tracking in one impeccable loan servicing procedure.</p>
+	
+	<div class="icons">
+	<i class="fa fa-facebook"></i>
+	<i class="fa fa-telegram"></i>
+	<i class="fa fa-twitter"></i>
+	<i class="fa fa-instagram"></i>
+
+	
+	</div>
+	
+</section>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
